@@ -127,10 +127,6 @@ input[type="checkbox"]:checked + label {
     font-weight: bold;
 }
 
-.input-filled {
-    background-color: red !important; /* Fondo blanco */
-}
-
 /* Estilos para el grid seleccionado */
 .grid.selected {
     background-color: hsl(148, 38%, 91%);
