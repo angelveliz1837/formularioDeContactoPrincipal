@@ -1,0 +1,374 @@
+body{
+    background-color: hsl(148, 38%, 91%);
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    margin: 9em 23em 0em 23em;
+    padding: 1em 2em;
+    font-family: "Karla", serif;
+    border-radius: 20px;
+}
+
+.titulo{
+    padding: 1em 1em 0.5em 1em;
+    margin: 0em;
+    font-size: 2em;
+}
+
+/*Colocar * para todos los campos requeridos*/
+label[for]:not([for="radio1"]):not([for="radio2"]):after {
+    content: ' *';
+    color: hsl(169, 82%, 27%);
+}
+
+.caja{
+    padding: 0.7em 0em;
+}
+
+.bloque_row{
+    display: flex;
+    flex-direction: row;
+}
+
+.subbloque{
+    padding: 0em 1em;
+    width: 50%;
+}
+
+.subbloque1{
+    padding: 0em 1em;
+}
+
+.subbloque2{
+    margin: 1em;
+    border-radius: 5px;
+}
+
+.subbloque2 input{
+    width: calc(100% - 1.9em);
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid hsl(187, 24%, 22%);
+}
+
+.subbloque2 input:hover{
+    cursor: pointer;
+    border: 1.6px solid hsl(169, 82%, 27%);
+}
+
+.bloque_column{
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1em;
+}
+
+.bloque_column .label{
+    padding: 0em 1em;
+}
+
+.bloque_column .correo{
+    padding: 0em 1em;
+}
+
+.correo{
+    margin:1em 0em;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.correo input{
+    width: calc(100% - 1.9em);
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid hsl(187, 24%, 22%);
+}
+
+.correo input:hover{
+    cursor: pointer;
+    border: 1.6px solid hsl(169, 82%, 27%);
+}
+
+.subtitulo{
+    padding: 0em 2em;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 12% 88%;
+    align-content: center;
+    border: 1px solid hsl(187, 24%, 22%);
+    width: 50%;
+    margin: 1em 2em;
+    padding: 0.6em 0.8em 0.6em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grid div{
+    align-content: center;
+}
+
+.grid label{
+    cursor: pointer;
+}
+
+.grid:hover{
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+/* Estilo del radio button en estado seleccionado */
+input[type="radio"]:checked + label {
+    font-weight: bold;
+}
+
+/* Estilo del checkbox en estado seleccionado */
+input[type="checkbox"]:checked + label {
+    font-weight: bold;
+}
+
+.input-filled {
+    background-color: red !important; /* Fondo blanco */
+}
+
+/* Estilos para el grid seleccionado */
+.grid.selected {
+    background-color: hsl(148, 38%, 91%);
+    border: 1px solid hsl(169, 82%, 27%);
+
+  }
+
+/* Estilos para la imagen del radio seleccionado */
+.selection-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    padding: 0.3em 0em 0.3em 0.2745em;
+  }
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    margin-top: 0.4em;
+}
+
+.mensaje{
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.mensaje textarea{
+    width: calc(100% - 1.9em);
+    margin: 0em;
+    padding: 1em 1em 4em 1em;
+    border-radius: 5px;
+    border: 1px solid hsl(187, 24%, 22%);
+}
+
+.mensaje textarea:hover{
+    cursor: pointer;
+    border: 1.6px solid hsl(169, 82%, 27%);
+}
+
+.confirmar{
+    padding: 0.8em 2em 0em 2em;
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+
+.confirmar div{
+    align-content: center;
+}
+
+.confirmar .texto{
+    margin-top: 0.08em;
+}
+
+.confirmar img {
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: -1.4em;
+    margin-top: 0.5em;
+}
+
+/* Estilo base del checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.4em;
+    height: 1.4em;
+    cursor: pointer; 
+    position: relative;
+    outline: none;
+    margin-top: 0.65em;
+    position: relative;
+    z-index: 10;
+  }
+
+.texto label{
+    cursor: pointer;
+}
+
+.boton{
+    margin: 0.8em 2.6em 0em 1.2em;
+    z-index: 1;
+    position: relative;
+}
+
+.boton button{
+    margin: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+    font-size: 1em;
+}
+
+.boton button:hover{
+    background-color: hsl(169, 86%, 14%);
+}
+
+.error-message{
+    color: hsl(0, 66%, 54%);
+    display: block;
+    padding: 0.7em 0em;
+    display: none;
+}
+
+/* Borde predeterminado */
+input, textarea {
+  border: 1px solid hsl(187, 24%, 22%);
+  outline: none;
+}
+
+/* Borde rojo para inputs no válidos */
+input.error:not([type="radio"]):not([type="checkbox"]), 
+textarea.error {
+  border: 2px solid hsl(0, 66%, 54%);
+}
+
+textarea.error:focus{
+    border: 2px solid hsl(0, 66%, 54%);
+}
+
+.posicion1{
+    margin-top: -1em;
+    margin-left: 2.5em;
+}
+
+.posicion2{
+    margin-left: 2.5em;
+}
+
+.aceptado{
+    display: inline-block;
+    position: relative;
+    bottom: 900px;
+    left: 530px;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(187, 24%, 22%);
+    font-family: "Karla", serif;
+    border-radius: 20px;
+}
+
+.linea{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    padding: 0em 0em 1em 0em;
+}
+
+.linea1{
+    padding: 0.2em 0.5em 0.1em 0.5em;
+}
+
+.linea2 h2{
+    margin-top: 0em;
+    margin-bottom: 0em;
+    align-content: center;
+}
+
+.sublinea p{
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.hidden{
+    display: none;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .container{
+        margin: 10em 0.5em 0em 0.5em;
+        padding: 0em;
+    }
+
+    .bloque_row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subbloque{
+        width: calc(100% - 1.9em);
+    }
+
+    .grid{
+        width: calc(100% - 5.8em);
+        display: grid;
+        grid-template-columns: 15% 85%;
+    }
+
+    .mensaje textarea{
+        padding-bottom: 15em;
+    }
+
+    .confirmar{
+        display: grid;
+        grid-template-columns: 15% 85%;
+    }
+
+    .boton button{
+        padding: 0.9em 1em;
+        margin-left: 0.7em;
+    }
+
+    .aceptado{
+        position: relative;
+        bottom: 1195px;
+        left: 7px;
+    }
+
+    .resultado{
+        width: calc(100% - 4em);
+        padding: 1.5em;
+    }
+
+    .linea{
+        display: grid;
+        grid-template-columns: 15% 85%;
+    }
+
+    .hidden{
+        display: none;
+    }
+    
+}

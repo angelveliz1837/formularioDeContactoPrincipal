@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <form class="formulario">
+      <h1 class="titulo">Contact Us</h1>
+      <div class="caja bloque_row">
+        <div class="subbloque">
+          <div class="subbloque1">
+            <label class="label" for="nombre">First Name</label>
+          </div>
+          <div class="subbloque2">
+            <input id="nombre" type="text" name="nombre">
+            <small class="error-message">This field is required</small>
+          </div>
+        </div>
+        <div class="subbloque">
+          <div class="subbloque1">
+            <label class="label" for="apellido">Last Name</label>
+          </div>
+          <div class="subbloque2">
+            <input id="apellido" type="text" name="apellido">
+            <small class="error-message">This field is required</small>
+          </div>
+        </div>
+      </div>
+      <div class="caja bloque_column">
+        <div class="label">
+          <label for="correo">Email Address</label>
+        </div>
+        <div class="correo">
+          <input id="correo" name="correo">
+          <small class="error-message">This field is required</small>
+        </div>
+      </div>
+      <div class="caja">
+        <div class="subtitulo">
+          <label for="radio">Query Type</label>
+        </div>
+        <div class="bloque_row">
+          <div class="grid">
+            <div class="icono">
+              <input type="radio" id="radio1" name="radio" class="hidden-radio">
+              <img class="radio-image" src="assets/images/icon-radio-selected.svg" alt="check" style="display:none;">
+            </div>
+            <div class="texto">
+              <label for="radio1">General Enquiry</label>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icono">
+              <input type="radio" id="radio2" name="radio" class="hidden-radio">
+              <img class="radio-image" src="assets/images/icon-radio-selected.svg" alt="check" style="display:none;">
+            </div>
+            <div class="texto">
+              <label for="radio2">Support Request</label>
+            </div>
+          </div>
+        </div>
+        <small class="posicion1 error-message query-type">Please select a query type</small>
+      </div>
+      <div class="caja bloque_column">
+        <div class="label">
+          <label for="mensaje">Message</label>
+        </div>
+        <div class="mensaje">
+          <textarea id="mensaje" name="mensaje"></textarea>
+          <small class="error-message">This field is required</small>
+        </div>
+      </div>
+      <div class="caja confirmar">
+        <div>
+          <input type="checkbox" name="consent" id="consent">
+          <img src="assets/images/icon-checkbox-check.svg" alt="check">
+        </div>
+        <div class="texto">
+          <label for="consent">I consent to being contacted by the team</label>
+        </div>
+      </div>
+      <small class="posicion2 error-message consent">To submit this form, please consent to being contacted</small>
+      <div class="caja boton">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+  <section class="aceptado hidden">
+    <div class="resultado">
+      <div class="linea">
+        <div class="linea1">
+          <img src="assets/images/icon-success-check.svg" alt="check">
+        </div>
+        <div class="linea2">
+          <h2>Message Sent!</h2>
+        </div>
+      </div>
+      <div class="sublinea">
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+    </div>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Angel Veliz</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
